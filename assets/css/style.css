@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    font-family: 'Inconsolata', monospace;
+}
+:root{
+    --color-dark:#000;
+    --color-white:#fff;
+    --color-pri:#626262;
+    --color-white-2:#f0f0f0;
+    --color-dark-2:#b4ad9e;
+}
+
+
+
+
+/* --------- header css strats here ---------*/
+header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+header .navbar-header{
+    height: 10rem;
+    line-height: 10rem;
+}
+header .navbar-brand{
+    font-size: 3rem;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 10rem;
+    height: 10rem;
+    padding: 0;
+}
+header .navbar-right li a{
+    font-size: 1.4rem;
+    color: var(--color-pri);
+    line-height: 10rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    padding: 0 1.5rem;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: var(--color-dark);
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+header .navbar-toggle{
+ margin-top: 3.2rem;
+}
+/* --------- header css ends here ---------*/
+/* --------- para css strats here ---------*/
+.para{
+    padding:10rem 2rem;
+} 
+.pri-heading a{
+    font-size: 1.4rem;
+    color: var(--color-dark-2);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: inline-block;
+}   
+.sec-heading{
+    font-size: 3rem;
+    color: var(--color-pri);
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+.info {
+    font-size: 1.4rem;
+    color: var(--color-pri);
+    margin-bottom: 5rem;  
+} 
+/* --------- para css ends here ---------*/
+/* --------- thumbnails css strats here ---------*/
+.thumbnails img{
+    margin-bottom: 3rem;
+} 
+.newsletter {
+    background-color: var(--color-white-2);
+    padding: 7rem 0;   
+}
+.newsletter  input{
+    width: 40rem; 
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: var(--color-dark);
+    padding: 2rem; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    background: transparent;
+}
+.newsletter .btn{
+    margin-left: -4rem;
+}
+.features .button{
+    width: 16rem;
+    height: 6rem;
+    margin: 4rem 0 6.5rem 0;
+}
+footer{
+    padding: 4rem 0;
+    background-color: var(--color-white-2);
+}
+footer ul{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer ul a{
+
+    margin-right: 10px ;
+    color: var(--color-dark);
+}
+@media all and (max-width:768px) {
+    header .navbar-right li a{
+        line-height: 5rem;
+    }
+    .para {
+        padding: 5rem 2rem;
+    }
+    .newsletter  input{
+        width: 80%;
+    }
+}
